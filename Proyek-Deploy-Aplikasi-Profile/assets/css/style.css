@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 768px) {
+  .icon {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Styles for screens smaller than 768px */
+  nav {
+    padding: 20px;
+  }
+
+  nav ul li a {
+    display: none;
+  }
+
+  .landing article {
+    flex-wrap: wrap-reverse;
+  }
+
+  .input {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .message {
+    padding-left: 0px !important;
+  }
+
+  .icon {
+    color: #231f20;
+    font-size: 20px;
+  }
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #231f20;
+  line-height: 1.5;
+  background-color: #eaeaea;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 12%;
+  background-color: #2e4ec1;
+}
+
+nav h2 {
+  color: #eaeaea;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #231f20;
+  font-size: 20px;
+}
+
+nav li a:hover {
+  color: #eaeaea;
+  transition: 200ms;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 20px 12%;
+}
+
+.landing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 70vh;
+}
+
+.hello {
+  display: flex;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.landing h1 {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.landing p{
+  width: 70vh;
+}
+
+span {
+  color: #2e4ec1;
+}
+
+section p {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 15px 15px;
+  width: 150px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  color: #333;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
+  color: #eaeaea;
+  transition: 200ms;
+}
+
+.landing aside {
+  display: flex;
+  justify-content: center;
+  height: max-content;
+}
+
+.landing aside img {
+  max-width: 75%;
+}
+
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.name-email {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"] {
+  height: 50px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  resize: none;
+}
+
+.message {
+  width: 100%;
+  padding-left: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  height: 50%;
+  margin: 20px;
+}
+
+.social-media ul {
+  display: flex;
+  justify-content: center;
+}
+
+.social-media ul li a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #eaeaea;
+  font-size: 20px;
+}
+
+textarea {
+  height: 300px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #231f20;
+  color: white;
+  padding: 40px;
+}
